@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title> A Create a Table </title>
+</head>
+<style>
+    /*HTML tables can have borders of diffrent styles and shapes
+    Example>>>>>
+    table,th,td 
+        {border: 1px solid black; }   */
+    table {
+        border: 1px red;
+        border-spacing: 0px;
+        /*<<<<<EXAMPLE.....Cell spacing is the space between each cell. 
+                            By default the space is set to 2 pixels.
+                            To change the space between table cells, use the CSS border-spacing property on the table element.*/
+    }
+
+
+
+    /*With the border-style property, you can set the appearance of the border.*/
+    th,
+    td {
+        border-style: dashed;
+        padding: 0px;
+        /*Cell padding is the space between the cell edges and the cell content.
+                    By default the padding is set to 0
+                    To add padding on table cells, use the CSS "padding" property*/
+    }
+    tr:nth-child(even){
+        background-color: rgb(124,124,124); /* If you add a background color on every othertable row.
+                                                 you will get a nice zebra stripes effect*/
+    }
+    tr:hover{background-color: blueviolet;}/* Use the "hover"selector on tr to highlight table rows on mouse over*/
+    td:hover{background-color: red;} /* Use the "hover" selector on td to highlight table cells on mouse over*/
+</style>
+
+<body>
+    <!--HTML tables allow web developers to arrange data into rows and columns
+A table in HTML consists of table cells inside rows and columns inside <table>and</table> tags.-->
+
+    <table border="2">
+        <!--Each Table ROW starts with a <tr> and ends with a </tr> tag.-->
+        <!--Each Table CELL is defined by a <td>and </td> tag,-->
+        <tr>
+            <td colspan="3">2022</td>
+        </tr>
+        <tr>
+            <td> A </td>
+            <td> B </td>
+            <td> C </td>
+
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">FIESTA</td>
+            <td> D </td>
+        </tr>
+        <tr>
+            <td> E </td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td> Y</td>
+            <td> Z</td>
+        </tr>
+    </table>
+
+    <table border="3">
+        <!--HTML tables can have headers for each column or row,or for many columns/rows
+            <th> element is defined header of table-->
+        <tr>
+            <th> A </th>
+            <th> B </th>
+            <th> C </th>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1"> A </td>
+            <td> B </td>
+            <td> C </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!--The following values are allowed:
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden-->

@@ -1,0 +1,40 @@
+<html>
+    <head>  
+        <title>RGBA</title>
+        <style>
+            div
+            {
+                background: rgb(0,128,0);
+            }
+            div.first
+            {
+                background: rgba(0, 128, 0, 0.1);/*rgba "a" is alpha value. opacity icin kullaniyoruz*/
+            }
+            div.second
+            {
+                background: rgba(0, 128, 0, 0.3);/*rgba a is alpha value. opacity icin kullaniyoruz*/
+            }
+            div.third
+            {
+                background: rgba(0, 128, 0, 0.6);/*rgba a is alpha value. opacity icin kullaniyoruz*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Transparent Boxes</h1>
+        <p>Results with RGBA()</p><!--RGBA is a function-->
+        <div class="first">
+            <h1> 10% opacity</h1><!--10% means  0.1-->
+        
+        </div>
+        <div class="second">
+            <h1> 30% opacity</h1><!--30% means 0.3-->
+        </div>
+        <div class="third">
+            <h1> 60% opacity</h1><!-- 60% meas 0.6-->
+        </div>
+        <div>
+            <h1>Default </h1>
+        </div>
+    </body>
+</html>

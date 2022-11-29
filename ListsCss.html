@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title> CSS Lists</title>
+    <style>
+        /*Internal CSS Style*/
+        /*When you want to apply style to all the HTML controls on your page*/
+        ul {
+            list-style-type: square;
+        }
+
+        /*Using CSS class*/
+        ul.manolya {
+            list-style-type: disc;
+        }
+/*Using CSS ID*/
+/*Use this when applying to single control or place*/
+        #ulgroove 
+        {
+            list-style-type: lower-greek;
+        }
+
+        ol {
+            list-style-type: lower-alpha;
+        }
+        ol.alpha 
+        {
+list-style-type: upper-alpha;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Example of CSS Lsits</h1>
+    <p>
+        This is my Unorder List
+    </p>
+    <ul>
+        <li>Coffee</li>
+        <!--Inline CSS Style-->
+        <!--When you want to apply style at one place-->
+        <ul style="list-style-type:circle;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+        <!--CSS class Style-->
+        <!--When you want to apply same style multiple place-->
+        <ul class="manolya">
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+        <!--CSS ID Style-->
+        <!--When you want to apply style to a specific control and defined at one place-->
+        <!--This is best practice-->
+        <ul id="ulgroove">
+            <li>11</li>
+            <li>12</li>
+        </ul>
+        <p> This is my Order List</p>
+        <ol class="alpha">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ol>
+</body>
+
+</html>

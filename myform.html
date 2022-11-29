@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>My First Registration Form</title>
+</head>
+
+<body>
+    <h1> Registration Form </h1>
+    <form>
+        <div style="background-color:bisque">
+            <label> Name<span style=color:red>*</span></label><br>
+            <input type="text" id="fname" name="fname">
+            <input type="text" id="lname" name="lname" /><br><br>
+            <label>Gender</label><br>
+            <input type="radio" id="maleoption" name="gender" value="Male" />
+            <label>Male</label>
+            <input type="radio" id="femaleoption" name="gender" value="Female" />
+            <label>Female</label><br><br>
+            <label>Username<span style=color:red>*</span></label><br>
+            <input type="text" id="username" name="username" /><br><br>
+            <label>Email<span style=color:red>*</span></label><br>
+            <input type="text" id="email" name="email" /><br><br>
+            <label>Phone<span style=color:red>*</span></label><br>
+            <input type="text" id="phone" name="phone" /><br><br>
+            <label>Password<span style=color:red>*</span></label><br>
+            <input type="password" id="password" name="password" /><br><br>
+            <label> Short Bio</label><br>
+            <textarea type="textarea" id="description" name="description" rows="10" cols="30">
+            </textarea><br><br>
+            <label>Education</label><br><br>
+            <input type="checkbox" id="Education" name="Graduated School" />
+            <label>Graduated School</label><br>
+            <input type="checkbox" id="Education" name="Bachelors Degree" />
+            <label>Bachelors Degree</label><br>
+            <input type="checkbox" id="Education" name="Masters Degree" />
+            <label>Masters Degree</label><br>
+            <input type="checkbox" id="Education" name="Diploma Degree" />
+            <label>Diploma Degree</label><br>
+            <input type="checkbox" id="Education" name="Other Certificate" />
+            <label>Other Certificate</label><br><br>
+            <label>Select Country</label><br>
+            <select id="Country" name="Country">
+                <option value="CA">Canada</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="OH">OTHER</option>
+            </select><br><br>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit Form" />
+
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>HTML Register Forms</title>
+</head>
+
+<body>
+    <h1> Student Registration Form</h1>
+    <form>
+        <div style="background-color: rgb(15, 148, 153);">
+            <lable> Name </lable><br>
+            <input type="text" id="fname" name="fname" /><br>
+            <lable> Last Name </lable><br>
+            <input type="text" id="lname" name="lname" /><br>
+            <label>Email Address*</label><br>
+            <input type="text" id="email" name="email" /><br>
+            <label>Gender</label>
+            <input type="radio" id="maleoption" name="gender" value="Male" />
+            <label>Male</label>
+            <input type="radio" id="femaleoption" name="gender" value="Female" />
+            <label>Female</label><br>
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="hobbies" name="Football" />
+            <label>Football</label>
+            <input type="checkbox" id="hobbies" name="Tennis" />
+            <label>Tennis</label>
+            <input type="checkbox" id="hobbies" name="Swimming" />
+            <label>Swimming</label>
+            <input type="checkbox" id="hobbies" name="Other" />
+            <label>Other</label><br>
+            <label>Province</label><br>
+            <select id="Province" name="province">
+                <option value="00">--Select Province--</option>
+                <option value="ON">Ontario</option>
+                <option value="QB">Quebec</option>
+                <option value="AB">Alberta</option>
+                <option value="BC">British Colombia</option>
+                <option value="OH">Other</option>
+
+            </select><br>
+            <label>Provide short description about yourself</label><br>
+            <textarea type="textarea" id="description" name="description" rows="10" cols="30">
+        </textarea><br>
+            <label>Password</label><br>
+            <input type="password" id="password" name="password" /><br><br>
+            <input type="reset" value="Reset Form" />
+            <input type="submit" value="Submit Form" />
+            <input type="button" value="Close Form"/>
+
+
+        </div>
+    </form>
+</body>
+
+</html>
+<!--"double quotes"-->
+<!--'single quotes'-->
